@@ -1,0 +1,124 @@
+:root {
+    --first: rgb(42, 201, 209);
+    --white: #ffffff;
+  }
+body{
+    font-family: 'Mulish', sans-serif;
+}
+nav{
+    background-color:rgba(42, 201, 209,1);
+    box-shadow: 0px 0px 10px 5px rgb(84, 116, 211);
+  
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 0 30px;
+}
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    position: relative;
+    left: 170px;
+}}
+.navbar-brand{
+    font-size: 1.9em;
+}
+.container .logo{
+    height: 80px;
+    border-radius: 100%;
+}
+.navbar-brand span{
+     font-size: 1.2em; 
+    color: rgb(38, 80, 165);
+    font-weight: 900;
+}  
+ .navbar-collapse ul li{
+     padding-top: 10px;
+ }
+ .navbar-collapse ul li:hover{
+     text-decoration: underline;
+ }
+
+.ab{
+     margin: auto; 
+    padding: 4.8125rem;
+}
+.ab .row{
+    margin-top: 80px;
+}
+.ab .row h1 span{
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--first);
+    margin-bottom: 30px;
+    text-shadow: 5px 1.5px 2px rgb(198, 194, 194);
+    user-select: none;
+}
+.ab .row p{
+    font-size: 1.3rem;
+    color: rgb(91, 96, 96);
+    letter-spacing: 1px;
+}
+.register-btn{
+    font-size: 1.5rem;
+    font-weight: 800;
+    background-color: var(--first) ;
+    color: var(--white);
+}
+.register-btn:hover{
+    background-color: var(--white) ;
+    border-color: var(--first);
+    color: var(--first);
+}
+.ab .row img{
+    width: 100%;
+    height: auto;
+    display:block;
+}
+
+/* ************************************* */
+.about{
+    padding-top: 7.5rem;
+}
+.container .head{
+    width:70%;
+    margin: auto;
+      /* background-color: red; */
+  
+}
+.container .head span{
+    font-size: 1.6em;
+    font-weight: 600;
+    color: var(--first);
+    text-shadow: 5px 1.5px 2px rgb(198, 194, 194);
+}
+
+.card img{
+    height: 80px;
+    width: 80px;
+    display: block;
+    margin: auto;
+}
+
+
+.container .card{
+    background-color: rgb(247, 245, 245);
+    margin: auto 10px;
+    box-shadow: 2px 1.5px 2px 1.5px rgb(193, 184, 184);
+}
+
+.content-section {
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    margin-top: 12% !important;
+  }
+  
+
+
+

@@ -1,25 +1,114 @@
+
 {% extends "shopKeeper/base.html" %}
 {% block content %}
-  <div class="container">
-    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4">
-    {% for product in products %}
-      <div class="col">
-        <div class="card shadow-sm">
-          <img alt="Not present" class="img-fluid img-thumbnail" src="{{ product.product_image.url }}">
+{% load static %}
+<div class="container ab">
+  <div class="row">
+    <div class="col-sm text-center">
+      <h1> Best Platform to really <br> <span>Grow Your Business</span> </h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, doloribus pariatur, vitae illo, sit est modi
+        ab possimus non quaerat explicabo nostrum labore. Tempore consectetur magnam nisi, ab hic sequi!</p>
+      <button type="button" class="btn register-btn px-4 py-3 my-4">Register Now</button>
+    </div>
+    <div class="col-sm">
+      <img src="{% static 'shopKeeper/1.PNG' %}" alt="abs">
+    </div>
+  </div>
+</div>
+<hr>
+<!-- --------------------------------------------------------------- -->
 
+<div class="container about" id="about">
+  <div class="head text-center p-4">
+    <h1 class="fw-bold mb-4"><span>Grow Your Business</span><br> with us in <span
+        style="font-size: 2.5rem; color: black; letter-spacing: 2px;">Digital Way</span> </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisi onsectetur adipisicing elit. Aliquid tempora cupiditate quaerat
+      impedit iure a quas modi quibusdam corporis ipsum dolores ut quia earum similique labore, incidunt unde
+      recusandae. Voluptates!</p>
+  </div>
+  <div class="cards">
+    <div class="container">
+      <div class="row text-center ">
+        <div class="card" style="width: 25rem;">
+          <img src="{% static 'shopKeeper/3.png' %}" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5><a class="card-text" href="{% url 'product-detail' product.id %}">{{ product.product_name }}</a></h5>
-            <p class="card-text">{{ product.product_description }}</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a class="btn btn-sm btn-outline-secondary" href="{% url 'product-detail' product.id %}" role="button">View</a>
-              </div>
-              <small class="text-muted">9 mins</small>
-            </div>
+            <h4 class="card-title">Maintain Catalog</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 25rem;">
+          <img src="{% static 'shopKeeper/2.PNG' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Check Progress</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+        <div class="card " style="width: 25rem;">
+          <img src="{% static 'shopKeeper/4.webp' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="c">Easy Communication</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
           </div>
         </div>
       </div>
-    {% endfor %}
     </div>
   </div>
+</div>
+<br>
+<hr>
+
+<div class="container">
+  <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4">
+    {% for product in products %}
+    <div class="col">
+      <div class="card shadow-sm">
+        <img alt="Not present" class="img-fluid img-thumbnail" src="{{ product.product_image.url }}">
+
+        <div class="card-body">
+          <h5><a class="card-text" href="{% url 'product-detail' product.id %}">{{ product.product_name }}</a></h5>
+          <p class="card-text">{{ product.product_description }}</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a class="btn btn-sm btn-outline-secondary" href="{% url 'product-detail' product.id %}"
+                role="button">View</a>
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="wrapper "id="contact">
+  <div class="inner">
+    <form action="">
+      <h3>Contact Us</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+      <label class="form-group">
+        <input type="text" class="form-control"  required>
+        <span>Your Name</span>
+        <span class="border"></span>
+      </label>
+      <label class="form-group">
+        <input type="text" class="form-control"  required>
+        <span for="">Your Mail</span>
+        <span class="border"></span>
+      </label>
+      <label class="form-group" >
+        <textarea name="" id="" class="form-control" required></textarea>
+        <span for="">Your Message</span>
+        <span class="border"></span>
+      </label>
+      <button class="submit-btn">Submit 
+        <i class="zmdi zmdi-arrow-right"></i>
+      </button>
+    </form>
+  </div>
+</div>
+
 {% endblock content %}
