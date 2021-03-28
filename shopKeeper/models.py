@@ -8,7 +8,7 @@ class Products(models.Model):
 	product_price = models.BigIntegerField()
 	product_discount = models.BigIntegerField()
 	product_description = models.TextField()
-	# product_unit = models.CharField(max_length=100)
+	product_unit = models.CharField(max_length=100)
 	product_stock = models.BigIntegerField()
 	product_image = models.ImageField(default = 'default.jpg', upload_to = 'product_pics', blank=True, null=True)
 	product_vendor = models.ForeignKey(User, on_delete=models.CASCADE)
